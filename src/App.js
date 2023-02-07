@@ -24,12 +24,17 @@ const App = () => {
       id: nanoid(),
       text: "This is my fourth note",
       date: "11/08/2020"
+    },
+    {
+      id: nanoid(),
+      text: "This is my fifth note",
+      date: "08/11/2020"
     }
   ]);
 
   return (
     <div className='container'>
-      <NotesList/>
+      <NotesList notes={notes}/>
     </div>
   )
 }
